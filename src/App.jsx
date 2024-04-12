@@ -1,14 +1,20 @@
 import React from 'react'
 import Header from './components/Header'
-import HomeScreen from './screen/HomeScreen'
+import { Outlet } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
+
 
 const App = () => {
   return (
     <>
       <Header />
-    <HomeScreen />
+      <Container className='my-2'>
+        <Outlet />
+      </Container>
+
+
     </>
-    
+
   )
 }
 
